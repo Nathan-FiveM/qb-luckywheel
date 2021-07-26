@@ -1,16 +1,20 @@
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+fx_version 'adamant'
+game "gta5"
+
+name 'qb-luckywheel'
+description 'Playable Lucky Wheel at the casino, similar to GTAOnline.'
+author 'Nathan#8860 - https://github.com/ArcadiaRoleplay/'
 
 client_scripts {
 	'client/client.lua',
 	'config.lua'
 }
--- 1100.39 220.09 -48.75
-server_scripts {
+server_script {
 	'server/server.lua',
 	'config.lua'
 }
 
-files {
+files{
 	'audio/dlcvinewood_amp.dat10',
 	'audio/dlcvinewood_amp.dat10.nametable',
 	'audio/dlcvinewood_amp.dat10.rel',
@@ -40,5 +44,3 @@ data_file 'AUDIO_SYNTHDATA' 'audio/dlcVinewood_amp.dat'
 data_file 'AUDIO_SPEECHDATA' 'audio/dlcvinewood_speech.dat'
 
 data_file 'AUDIO_WAVEPACK' 'audio/sfx/dlc_vinewood'
-
-
